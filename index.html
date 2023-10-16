@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day Countdown</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: lightgoldenrodyellow;;
+        }
+
+        #countdown {
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:rgb(98, 7, 7);
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        #message-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        #message {
+            font-size: 100px;
+            font-style: italic;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+            color: orange;
+            text-align: center;
+            animation: moveIn 1s;
+        }
+        #msg1 {
+            font-size: 100px;
+            font-style: italic;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            animation: moveIn 1s;
+        }
+        #msg2{
+            font-size: 100px;
+            font-style: italic;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+            color: green;
+            text-align: center;
+            animation: moveIn 1s;
+        }
+
+         @keyframes moveIn {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="countdown">10</div>
+    <div id="message-container">
+        <h1 id="message">HAPPY</h1>
+        <h1 id="msg1">INDEP<span style="color: blue;">END</span>ENCE </h1>
+        <h1 id="msg2">DAY</h1>
+         </div>
+    <script src="script.js"></script>
+</body>
+</html>
